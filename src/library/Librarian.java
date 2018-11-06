@@ -19,6 +19,7 @@ public class Librarian extends Employee {
 	}
 
 	@Override // overrides pay getter from employee class
+	
 	public double getTotalPay(int year) {
 		return (yearlyPay / 12) * (LocalDate.now().getMonthValue() - 1);// total yearly salary is divided into monthly
 																		// salaries and multiplied by the amount or
@@ -26,8 +27,7 @@ public class Librarian extends Employee {
 																		// minus one cause only months passed already
 	}
 
-	// method does not accept anything so it is an alternate version of
-	// getTotalPay-its overloads it
+
 	public double getTotalPay() {
 		return (yearlyPay / 12) * (LocalDate.now().getMonthValue() - 1);// total yearly salary is divided into monthly
 																		// salaries and multiplied by the amount or
